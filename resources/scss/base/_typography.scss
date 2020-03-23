@@ -1,0 +1,49 @@
+@import '../utilities/index';
+
+/* ============================================= */
+/*              Base styles                      */
+/* ============================================= */
+
+* {
+  font-family: $font-stack-primary;
+  color: $primary-font-color;
+  box-sizing: border-box;
+}
+
+p {
+  line-height: 1.45em;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* ============================================= */
+/*              Typography                       */
+/* ============================================= */
+
+.headline-primary {
+    color: $secondary-font-color;
+    margin-left: 10px;
+  }
+  
+  .headline-secondary {
+    font-weight: 300;
+    color: $primary-font-color;
+  }
+  
+  .link {
+    color: $default-color;
+    font-weight: 700;
+  }
+  
+  .blockquote {
+    font-size: 1.5em;
+    font-weight: 300;
+    font-style: italic;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 8px solid $secondary-font-color;
+    border-radius: 5px;
+  }

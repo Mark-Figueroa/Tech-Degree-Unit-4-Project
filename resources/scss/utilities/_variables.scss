@@ -1,0 +1,46 @@
+// ======================
+//Color Variables
+// ======================
+
+// Colors
+$white:#fff;
+$black:#000;
+
+$default-color:#51ddfc;
+$default-color-light:lighten($default-color,15%);
+$default-color-dark:darken($default-color,15%);
+$default-color-complement:complement($default-color);
+
+$primary-font-color:#777;
+$primary-font-color-light:lighten($primary-font-color,15%);
+$primary-font-color-dark:darken($primary-font-color,15%);
+$primary-font-color-complement:complement($primary-font-color);
+
+
+$secondary-font-color:#58e1c1; //Used as background color in certain instances.
+$secondary-font-color-light:lighten($default-color,15%);
+$secondary-font-color-dark:darken($default-color,15%);
+$secondary-font-color-complement:complement($secondary-font-color);
+
+$error-color:#e4757a;
+$error-color-light:lighten($error-color,15%);
+
+$info-color: #927bc1;
+$info-color-light:lighten($info-color,15%);
+  
+$success-color: #63cc82;
+$success-color-light:lighten($success-color,15%);
+  
+$warning-color: #fd7856;
+$warning-color-light:lighten($warning-color,15%);
+
+// Fonts
+$font-stack-primary: 'Lato', sans-serif;
+$font-stack-secondary: 'Bree Serif', serif;
+
+// Layout
+$max-width: 1000px;
+$width-pct:100%;
+
+//Media Query Breakpoints
+$min-width:768px;

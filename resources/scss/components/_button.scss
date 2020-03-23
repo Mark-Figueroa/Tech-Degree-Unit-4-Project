@@ -1,0 +1,63 @@
+@import '../utilities/index';
+
+/* ============================================= */
+/*              Buttons                          */
+/* ============================================= */
+
+.btn {
+    margin-top: 15px;
+    width: $width-pct;
+    color: $white;
+    border: none;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+    &:hover{
+      cursor: pointer;
+    }
+    @media (min-width:$min-width) {
+      & {
+        padding: 10px 30px;
+      }
+      
+      & + & {
+        margin-left: 10px;
+      }
+    }
+  }
+  
+
+  .default {
+    background-color:$default-color;
+    &:hover{
+    background-color:$default-color-light;
+    }
+  }
+
+  .error {
+      background-color:$error-color;
+      &:hover{
+      background-color:$error-color-light;  
+      }
+    }
+  
+  .info {
+    background-color:$info-color;
+    &:hover{ 
+    background-color:$info-color-light;  
+    }
+  }
+  
+  .success {
+    background-color:$success-color;
+    &:hover{
+    background-color:$success-color-light;  
+    }
+  }
+  
+  .warning {
+    background-color:$warning-color;
+    &:hover{
+    background-color:$warning-color-light;  
+    }
+  }

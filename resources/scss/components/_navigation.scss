@@ -1,0 +1,32 @@
+@import '../utilities/index';
+
+/* ============================================= */
+/*              Navigation                       */
+/* ============================================= */
+
+.nav {
+    padding-left: 0;
+    @include flex($dis:flex,$basis:100%,$dir:column);
+    @media (min-width:$min-width) {
+      @include flex($dir:row, $just:flex-end);
+      align-items: center;       
+    }
+
+    &-link {
+      text-align: center;
+      border-radius: 5px;
+      padding: 10px 0;
+      display: block;
+      width: $width-pct;
+      transition: background-color .2s ease-in-out, color .2s ease-in-out, font-family .2s ease-in-out;
+      @media (min-width:$min-width) {
+        @include flex($basis:100px);       
+      }
+      }
+    
+      &-link:hover {
+      color: $white;
+      background-color: $secondary-font-color;
+      }
+
+}

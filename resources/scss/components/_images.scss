@@ -1,0 +1,37 @@
+@import '../utilities/index';
+
+/* ============================================= */
+/*              Images                           */
+/* ============================================= */
+
+%img {
+  @include image;
+}
+
+.img{
+
+    &-avatar {
+        @extend %img;
+        max-height: 100%;
+      }
+      
+      &-frame {
+        @extend %img;
+        padding: 13px;
+        border: 1px solid #ccc;
+      }
+      
+      &-logo {
+        display: block;
+        @include auto-margin;
+      }
+
+}
+
+.logo{
+  @media (min-width:$min-width) {
+    margin-left: initial;
+    margin-right: initial;
+  }
+
+}
