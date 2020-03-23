@@ -2,15 +2,14 @@
 //  Partial Imports
 // ======================================
 
-// Base Styles     
+// Utilities Partials     
+@import 'utilities/index';
+
+// Base Partials 
 @import 'base/index';
 
-// Component Styles 
+// Components Partials
 @import 'components/index';
-
-
-// Utilities
-@import 'utilities/index';
 
 
 
