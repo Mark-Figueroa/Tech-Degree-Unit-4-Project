@@ -125,12 +125,16 @@
     &-12 {
       flex-basis: 100%;
     }
-    & .centered {
-      display: block;
-      @include auto-margin;
-    }
-    
   }
+
+  .centered {
+    @media (min-width:$min-width) {
+    display: block;
+    @include auto-margin;
+    }
+  }
+  
+
 }
   
   .card {
