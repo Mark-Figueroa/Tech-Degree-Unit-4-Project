@@ -104,6 +104,10 @@
     
     &-7 {
       flex-basis: 58.33%;
+      @media (min-width:$min-width) {
+        display: block;
+        @include auto-margin;
+        }
     }
     
     &-8 {
@@ -126,14 +130,6 @@
       flex-basis: 100%;
     }
   }
-
-  .centered {
-    @media (min-width:$min-width) {
-    display: block;
-    @include auto-margin;
-    }
-  }
-  
 
 }
   
